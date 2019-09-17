@@ -1,0 +1,14 @@
+{
+    "name": "marcusmyers/team-manager",
+    "description": "Manage a Team of Athletes",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark Myers",
+            "email": "marcusmyers@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
