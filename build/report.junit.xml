@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="TeamManager Test Suite" tests="17" assertions="25" errors="0" failures="0" skipped="0" time="9.816707">
+    <testsuite name="Marcusmyers\TeamManager\Tests\Feature\AthleteTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Feature/AthleteTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.707574">
+      <testcase name="the_route_can_be_accessed" class="Marcusmyers\TeamManager\Tests\Feature\AthleteTest" classname="Marcusmyers.TeamManager.Tests.Feature.AthleteTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Feature/AthleteTest.php" line="11" assertions="2" time="0.707574"/>
+    </testsuite>
+    <testsuite name="Marcusmyers\TeamManager\Tests\Feature\CoachTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Feature/CoachTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.415170">
+      <testcase name="the_route_can_be_accessed" class="Marcusmyers\TeamManager\Tests\Feature\CoachTest" classname="Marcusmyers.TeamManager.Tests.Feature.CoachTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Feature/CoachTest.php" line="11" assertions="2" time="0.415170"/>
+    </testsuite>
+    <testsuite name="Marcusmyers\TeamManager\Tests\Feature\TeamTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Feature/TeamTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="1.075285">
+      <testcase name="the_route_can_be_accessed" class="Marcusmyers\TeamManager\Tests\Feature\TeamTest" classname="Marcusmyers.TeamManager.Tests.Feature.TeamTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Feature/TeamTest.php" line="13" assertions="3" time="1.075285"/>
+    </testsuite>
+    <testsuite name="Marcusmyers\TeamManager\Tests\Unit\AthleteTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/AthleteTest.php" tests="5" assertions="7" errors="0" failures="0" skipped="0" time="2.031247">
+      <testcase name="it_can_access_the_database" class="Marcusmyers\TeamManager\Tests\Unit\AthleteTest" classname="Marcusmyers.TeamManager.Tests.Unit.AthleteTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/AthleteTest.php" line="24" assertions="1" time="0.380694"/>
+      <testcase name="it_can_properly_set_the_email_address" class="Marcusmyers\TeamManager\Tests\Unit\AthleteTest" classname="Marcusmyers.TeamManager.Tests.Unit.AthleteTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/AthleteTest.php" line="32" assertions="1" time="0.394355"/>
+      <testcase name="it_can_properly_set_the_birthday" class="Marcusmyers\TeamManager\Tests\Unit\AthleteTest" classname="Marcusmyers.TeamManager.Tests.Unit.AthleteTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/AthleteTest.php" line="43" assertions="2" time="0.414658"/>
+      <testcase name="it_can_properly_parse_the_athletes_name" class="Marcusmyers\TeamManager\Tests\Unit\AthleteTest" classname="Marcusmyers.TeamManager.Tests.Unit.AthleteTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/AthleteTest.php" line="55" assertions="2" time="0.382209"/>
+      <testcase name="the_athlete_can_be_added_to_a_team" class="Marcusmyers\TeamManager\Tests\Unit\AthleteTest" classname="Marcusmyers.TeamManager.Tests.Unit.AthleteTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/AthleteTest.php" line="64" assertions="1" time="0.459331"/>
+    </testsuite>
+    <testsuite name="Marcusmyers\TeamManager\Tests\Unit\CoachTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/CoachTest.php" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="1.188716">
+      <testcase name="it_can_access_the_database" class="Marcusmyers\TeamManager\Tests\Unit\CoachTest" classname="Marcusmyers.TeamManager.Tests.Unit.CoachTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/CoachTest.php" line="14" assertions="1" time="0.379603"/>
+      <testcase name="it_can_properly_parse_the_coaches_name" class="Marcusmyers\TeamManager\Tests\Unit\CoachTest" classname="Marcusmyers.TeamManager.Tests.Unit.CoachTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/CoachTest.php" line="24" assertions="2" time="0.388724"/>
+      <testcase name="it_can_be_added_to_a_team" class="Marcusmyers\TeamManager\Tests\Unit\CoachTest" classname="Marcusmyers.TeamManager.Tests.Unit.CoachTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/CoachTest.php" line="34" assertions="1" time="0.420389"/>
+    </testsuite>
+    <testsuite name="Marcusmyers\TeamManager\Tests\Unit\ScheduleTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/ScheduleTest.php" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.841398">
+      <testcase name="it_can_access_the_database" class="Marcusmyers\TeamManager\Tests\Unit\ScheduleTest" classname="Marcusmyers.TeamManager.Tests.Unit.ScheduleTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/ScheduleTest.php" line="14" assertions="2" time="0.419853"/>
+      <testcase name="it_can_properly_parse_the_team_name" class="Marcusmyers\TeamManager\Tests\Unit\ScheduleTest" classname="Marcusmyers.TeamManager.Tests.Unit.ScheduleTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/ScheduleTest.php" line="27" assertions="1" time="0.421545"/>
+    </testsuite>
+    <testsuite name="Marcusmyers\TeamManager\Tests\Unit\ScheduleTypeTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/ScheduleTypeTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.453023">
+      <testcase name="it_can_access_the_database" class="Marcusmyers\TeamManager\Tests\Unit\ScheduleTypeTest" classname="Marcusmyers.TeamManager.Tests.Unit.ScheduleTypeTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/ScheduleTypeTest.php" line="14" assertions="1" time="0.453023"/>
+    </testsuite>
+    <testsuite name="Marcusmyers\TeamManager\Tests\Unit\TeamTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/TeamTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="3.104294">
+      <testcase name="it_can_access_the_database" class="Marcusmyers\TeamManager\Tests\Unit\TeamTest" classname="Marcusmyers.TeamManager.Tests.Unit.TeamTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/TeamTest.php" line="25" assertions="1" time="0.369428"/>
+      <testcase name="it_can_have_multiple_coaches" class="Marcusmyers\TeamManager\Tests\Unit\TeamTest" classname="Marcusmyers.TeamManager.Tests.Unit.TeamTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/TeamTest.php" line="33" assertions="1" time="0.542411"/>
+      <testcase name="it_can_have_big_team_of_athletes" class="Marcusmyers\TeamManager\Tests\Unit\TeamTest" classname="Marcusmyers.TeamManager.Tests.Unit.TeamTest" file="/Users/mmyers/Documents/Code/team-manager/tests/Unit/TeamTest.php" line="48" assertions="1" time="2.192455"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
