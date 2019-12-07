@@ -33,4 +33,9 @@ class Athlete extends Model
 	{
 		return ucfirst(collect(explode(' ', $this->name))->last());
 	}
+
+	public function scopeActive($query)
+	{
+		return $query->where('active', 1);
+	}
 }

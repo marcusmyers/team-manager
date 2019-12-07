@@ -17,6 +17,7 @@ class AthleteTest extends TestCase
 
 		$this->athlete = new Athlete();
 		$this->athlete->name = 'Mark Myers';
+		$this->athlete->active = 1;
 		$this->athlete->save();
 	}
 
@@ -58,6 +59,14 @@ class AthleteTest extends TestCase
 
 	    $this->assertSame($newAthlete->first_name, 'Mark');
 	    $this->assertSame($newAthlete->last_name, 'Myers');
+	}
+
+	/** @test */
+	public function it_can_get_active_athletes()
+	{
+	    $newAthlete = Athlete::active()->get();
+
+	    $this->assertSame($newAthlete->first()->name, 'Mark Myers');
 	}
 
 	/** @test */

@@ -9,5 +9,6 @@ $factory->define(Coach::class, function (Faker $faker) {
     	'email' => $faker->email,
     	'bio' => $faker->paragraph,
     	'avatar' => $faker->imageUrl('200', '200', 'people'),
+        'active' => true,
     ];
 });

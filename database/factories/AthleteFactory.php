@@ -12,6 +12,7 @@ $factory->define(Athlete::class, function (Faker $faker) {
     	'height' => '5 ft. 10 in',
     	'weight' => '175 lbs',
     	'position' => 'Guard',
-    	'number' => $faker->randomNumber(2)
+    	'number' => $faker->randomNumber(2),
+        'active' => true,
     ];
 });
