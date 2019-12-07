@@ -12,5 +12,6 @@ $factory->define(Schedule::class, function (Faker $faker) {
     	'schedule_type_id' => function() {
     		return factory(ScheduleType::class)->create()->id;
     	},
+        'active' => true,
     ];
 });

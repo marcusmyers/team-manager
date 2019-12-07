@@ -24,4 +24,9 @@ class Team extends Model
 	{
 		return $this->hasMany('Marcusmyers\TeamManager\Models\Schedule');
 	}
+	
+	public function scopeActive($query)
+	{
+		return $query->where('active', 1);
+	}
 }

@@ -21,6 +21,16 @@ class CoachTest extends TestCase
 	}
 
 	/** @test */
+	public function it_can_get_active_coaches()
+	{
+		$coach = factory(Coach::class)->create(['name' => 'Mark Myers']);
+
+	    $newCoach = Coach::active()->get();
+
+	    $this->assertSame($newCoach->first()->name, 'Mark Myers');
+	}
+
+	/** @test */
 	public function it_can_properly_parse_the_coaches_name()
 	{
 		$coach = factory(Coach::class)->create(['name' => 'Mark Myers']);

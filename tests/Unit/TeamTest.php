@@ -18,6 +18,7 @@ class TeamTest extends TestCase
 
 		$this->team = new Team();
 		$this->team->name = 'Da Bulls';
+		$this->team->active = true;
 		$this->team->save();
 	}
 
@@ -27,6 +28,14 @@ class TeamTest extends TestCase
 		$newTeam = Team::find($this->team->id);
 
 		$this->assertSame($newTeam->name, 'Da Bulls');
+	}
+
+	/** @test */
+	public function it_can_get_active_teams()
+	{
+	    $newTeam = Team::active()->get();
+
+	    $this->assertSame($newTeam->first()->name, 'Da Bulls');
 	}
 
 	/** @test */

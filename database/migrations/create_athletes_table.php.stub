@@ -34,6 +34,7 @@ class CreateAthletesTable extends Migration
             $table->string('position')->nullable();
             $table->string('shirt_size')->nullable(); 
             $table->boolean('signed_waiver')->default(false);
+            $table->boolean('active')->default(true);
             $table->softDeletes();
             $table->timestamps();
         });

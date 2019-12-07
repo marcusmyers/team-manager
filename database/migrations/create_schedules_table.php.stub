@@ -20,6 +20,7 @@ class CreateSchedulesTable extends Migration
             $table->unsignedBigInteger('schedule_type_id');
             $table->string('opponent')->nullable();
             $table->text('location')->nullable();
+            $table->boolean('active')->default(true);
             $table->softDeletes();
             $table->timestamps();
         });
