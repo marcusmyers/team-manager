@@ -31,7 +31,7 @@ class TeamManagerServiceProvider extends ServiceProvider
 				__DIR__ . '/../database/factories/TeamFactory.php' => database_path('factories/TeamFactory.php')
 			], 'factories');
 		}
-		
+
 		if (! class_exists('CreateAthletesTable')) {
 			$this->publishes([
 				__DIR__ . '/../database/migrations/create_athletes_table.php.stub' => database_path('migrations/'.date('Y_m_d_His', time()).'_create_athletes_table.php')
@@ -68,6 +68,12 @@ class TeamManagerServiceProvider extends ServiceProvider
 			], 'migrations');
 		}
 
+        if (class_exists('CreateSchedulesTable') && !class_exists('AddEndTimeToSchedules')) {
+            $this->publishes([
+              __DIR__ . '/../database/migrations/add_end_time_to_schedules_table.php.stub' => database_path('migrations/'.date('Y_m_d_His', time()).'_add_end_time_to_schedules_table.php')
+            ], 'migrations');
+        }
+
 		if (! class_exists('CreateScheduleTypesTable')) {
 			$this->publishes([
 				__DIR__ . '/../database/migrations/create_schedule_types_table.php.stub' => database_path('migrations/'.date('Y_m_d_His', time()).'_create_schedule_types_table.php')
@@ -83,6 +89,6 @@ class TeamManagerServiceProvider extends ServiceProvider
 
 	public function register()
 	{
-		
-	}	
+
+	}
 }

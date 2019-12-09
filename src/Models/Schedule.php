@@ -10,6 +10,7 @@ class Schedule extends Model
 {
 	protected $guarded = [];
 	protected $table = 'schedules';
+    protected $dates = ['schedule_date_time','end_time'];
 
 	public function team()
 	{
@@ -18,6 +19,6 @@ class Schedule extends Model
 
 	public function schedule_types()
 	{
-		return $this->belongsTo('Marcusmyers\TeamManager\Models\ScheduleType');
+		return $this->belongsTo('Marcusmyers\TeamManager\Models\ScheduleType', 'schedule_type_id');
 	}
 }
