@@ -13,17 +13,17 @@ class ScheduleTypeTest extends TestCase
 	/** @test */
 	public function it_can_access_the_database()
 	{
-	    $team = factory(Team::class)->create();
+	    $team = Team::factory()->create();
 
-	    $schedule_type = factory(ScheduleType::class)->create(['name' => 'game']);
+	    $schedule_type = ScheduleType::factory()->create(['name' => 'game']);
 
-	    $schedule1 = factory(Schedule::class)->create([
-	    	'team_id' => $team->id, 
-	    	'schedule_type_id' => $schedule_type->id, 
+	    $schedule1 = Schedule::factory()->create([
+	    	'team_id' => $team->id,
+	    	'schedule_type_id' => $schedule_type->id,
 	    	'schedule_date_time' => Carbon::now()->addMonth()
 	    ]);
-	    $schedule2 = factory(Schedule::class)->create([
-	    	'team_id' => $team->id, 
+	    $schedule2 = Schedule::factory()->create([
+	    	'team_id' => $team->id,
 	    	'schedule_type_id' => $schedule_type->id,
 	    	'schedule_date_time' => Carbon::now()->addMonth(2)
 	    ]);

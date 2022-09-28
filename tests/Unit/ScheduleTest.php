@@ -13,9 +13,9 @@ class ScheduleTest extends TestCase
 	/** @test */
 	public function it_can_access_the_database()
 	{
-	    $team = factory(Team::class)->create();
+	    $team = Team::factory()->create();
 
-	    $schedule = factory(Schedule::class)->create(['team_id' => $team->id]);
+	    $schedule = Schedule::factory()->create(['team_id' => $team->id]);
 
 	    $newSchedule = Schedule::findOrFail($schedule->id);
 
@@ -26,9 +26,9 @@ class ScheduleTest extends TestCase
 	/** @test */
 	public function it_can_properly_parse_the_team_name()
 	{
-	    $team = factory(Team::class)->create();
+	    $team = Team::factory()->create();
 
-	    $schedule = factory(Schedule::class)->create(['team_id' => $team->id]);
+	    $schedule = Schedule::factory()->create(['team_id' => $team->id]);
 
 	    $newSchedule = Schedule::findOrFail($schedule->id);
 
