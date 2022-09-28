@@ -9,23 +9,23 @@ use Marcusmyers\TeamManager\Tests\TestCase;
 
 class TeamTest extends TestCase
 {
-	/** @test */
-	public function the_route_can_be_accessed()
-	{
-		$team = factory(Team::class)->create(['name' => 'Da Bulls']);
-		$coach = factory(Coach::class)->create(['name' => 'Mark Myers']);
-		
-		$team->coaches()->attach($coach->id);
-	    $athletes = factory(Athlete::class, 15)
-	    				->create()
-	    				->each(function ($athlete) use ($team) {
-	    					$athlete->teams()->attach($team->id);
-	    				});
-	    
-	    $response = $this->get('/team/'.$team->id);
+    /** @test */
+    public function the_route_can_be_accessed()
+    {
+        $team = Team::factory()->create(['name' => 'Da Bulls']);
+        $coach = Coach::factory()->create(['name' => 'Mark Myers']);
 
-	    $response->assertSee('Da Bulls')
-	    		 ->assertSee('Mark Myers')
-	    		 ->assertSee('15');
-	}
+        $team->coaches()->attach($coach->id);
+        $athletes = Athlete::factory()->count(15)
+                        ->create()
+                        ->each(function ($athlete) use ($team) {
+                            $athlete->teams()->attach($team->id);
+                        });
+
+        $response = $this->get('/team/'.$team->id);
+
+        $response->assertSee('Da Bulls')
+                 ->assertSee('Mark Myers')
+                 ->assertSee('15');
+    }
 }

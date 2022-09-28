@@ -1,28 +1,20 @@
 
 
 Code Coverage Report:    
-  2019-10-01 20:42:03    
+  2020-12-12 17:31:46    
                          
  Summary:                
-  Classes: 66.67% (6/9)  
-  Methods: 83.33% (15/18)
-  Lines:   63.49% (40/63)
+  Classes: 22.22% (2/9)  
+  Methods: 40.91% (9/22) 
+  Lines:   53.52% (38/71)
 
-\Marcusmyers\TeamManager::Marcusmyers\TeamManager\TeamManagerServiceProvider
-  Methods:  50.00% ( 1/ 2)   Lines:  55.32% ( 26/ 47)
-\Marcusmyers\TeamManager\Http\Controllers::Marcusmyers\TeamManager\Http\Controllers\GetAthlete
+Marcusmyers\TeamManager\Http\Controllers\GetAthlete
   Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  1/  1)
-\Marcusmyers\TeamManager\Http\Controllers::Marcusmyers\TeamManager\Http\Controllers\GetCoach
+Marcusmyers\TeamManager\Http\Controllers\GetCoach
   Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  1/  1)
-\Marcusmyers\TeamManager\Http\Controllers::Marcusmyers\TeamManager\Http\Controllers\GetTeam
-  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  1/  1)
-\Marcusmyers\TeamManager\Models::Marcusmyers\TeamManager\Models\Athlete
-  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  4/  4)
-\Marcusmyers\TeamManager\Models::Marcusmyers\TeamManager\Models\Coach
-  Methods: 100.00% ( 3/ 3)   Lines: 100.00% (  3/  3)
-\Marcusmyers\TeamManager\Models::Marcusmyers\TeamManager\Models\Schedule
-  Methods:  50.00% ( 1/ 2)   Lines:  50.00% (  1/  2)
-\Marcusmyers\TeamManager\Models::Marcusmyers\TeamManager\Models\ScheduleType
-  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  1/  1)
-\Marcusmyers\TeamManager\Models::Marcusmyers\TeamManager\Models\Team
-  Methods:  66.67% ( 2/ 3)   Lines:  66.67% (  2/  3)
+Marcusmyers\TeamManager\Models\Athlete
+  Methods:  83.33% ( 5/ 6)   Lines:  83.33% (  5/  6)
+Marcusmyers\TeamManager\Models\Team
+  Methods:  25.00% ( 1/ 4)   Lines:  25.00% (  1/  4)
+Marcusmyers\TeamManager\TeamManagerServiceProvider
+  Methods:  50.00% ( 1/ 2)   Lines:  58.82% ( 30/ 51)

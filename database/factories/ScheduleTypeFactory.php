@@ -1,11 +1,21 @@
 <?php
 
-use Faker\Generator as Faker;
+namespace Marcusmyers\TeamManager\Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Marcusmyers\TeamManager\Models\ScheduleType;
 
-$factory->define(ScheduleType::class, function (Faker $faker) {
-    return [
-    	'name' => $faker->word,
-        'active' => true,
-    ];
-});
+class ScheduleTypeFactory extends Factory
+{
+    public function modelName()
+    {
+        return ScheduleType::class;
+    }
+
+    public function definition()
+    {
+        return [
+            'name' => 'Practice'
+        ];
+    }
+}

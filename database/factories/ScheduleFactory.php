@@ -1,17 +1,25 @@
 <?php
 
-use Carbon\Carbon;
-use Faker\Generator as Faker;
-use Marcusmyers\TeamManager\Models\Schedule;
-use Marcusmyers\TeamManager\Models\ScheduleType;
+namespace Marcusmyers\TeamManager\Database\Factories;
 
-$factory->define(Schedule::class, function (Faker $faker) {
-    return [
-    	'schedule_date_time' => Carbon::now()->addMonth(),
-    	'team_id' => $faker->randomNumber(),
-    	'schedule_type_id' => function() {
-    		return factory(ScheduleType::class)->create()->id;
-    	},
-        'active' => true,
-    ];
-});
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Marcusmyers\TeamManager\Models\Schedule;
+
+class ScheduleFactory extends Factory
+{
+    public function modelName()
+    {
+        return Schedule::class;
+    }
+
+    public function definition() {
+        return [
+            'schedule_date_time' => Carbon::now(),
+            'team_id' => $this->faker->randomNumber(),
+            'schedule_type_id' => $this->faker->randomNumber(),
+            'opponent' => null,
+            'location' => $this->faker->city,
+        ];
+    }
+}
